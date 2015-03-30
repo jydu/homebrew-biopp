@@ -7,7 +7,6 @@ class Maffilter < Formula
   depends_on "libbpp-phyl-omics"
   depends_on "boost"
   depends_on "libzip"
-  depends_on "bzip2"
  
   def install
     system "cmake", ".", *std_cmake_args
