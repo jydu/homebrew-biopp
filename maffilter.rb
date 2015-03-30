@@ -6,7 +6,7 @@ class Maffilter < Formula
   depends_on "cmake" => :build
   depends_on "libbpp-phyl-omics"
   depends_on "boost"
-  depends_on "libz"
+  depends_on "libzip"
   depends_on "bzip2"
  
   def install
