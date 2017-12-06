@@ -17,4 +17,3 @@ class LibbppPopgen < Formula
     end
   end
 end
-end
