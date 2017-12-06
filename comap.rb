@@ -1,7 +1,7 @@
 class Comap < Formula
   homepage "http://bioweb.me/comap"
-  url "http://biopp.univ-montp2.fr/repos/sources/comap/comap-1.5.2.tar.gz"
-  sha256 "c4769ea64fd0441528e5fe9707fecc726ab7790c72698d4c432452de62d3763f"
+  url "https://github.com/jydu/comap/releases/tag/v1.5.4"
+  sha256 "c53d9599345162dd70b87dacb5646ac2d81516ae86081554fdcfc53084599cf3"
   depends_on "cmake" => :build
   depends_on "libbpp-phyl"
 

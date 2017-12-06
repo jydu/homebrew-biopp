@@ -1,14 +1,20 @@
 class LibbppQt < Formula
-  homepage "http://biopp.univ-montp2.fr/"
-  url "http://biopp.univ-montp2.fr/repos/sources/bpp-qt-2.2.0.tar.gz"
-  sha256 "9662f66bc3491d8e128263f6bd91fcdbecdb375ec9f24519f44855cdcdb9d553"
+  desc "Bio++ Sequence Library"
+  homepage "http://bioweb.me/biopp"
+  url "https://github.com/BioPP/bpp-qt/releases/tag/v2.3.1"
+  sha256 "093b7915507f38a091eba69e93642e6a4f87178804a8ee017e1b732626793d48"
 
   depends_on "cmake" => :build
   depends_on "qt"
   depends_on "libbpp-phyl"
 
   def install
-    system "cmake", ".", *std_cmake_args, "-DBUILD_TESTING=no"
-    system "make", "install"
+    resource(r).stage do
+      mkdir "build" do
+        system "cmake", "..", *std_cmake_args
+        system "make", "#{r}-shared", "#{r}-static"
+        system "make", "install"
+      end
+    end
   end
 end

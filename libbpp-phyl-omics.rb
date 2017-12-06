@@ -1,14 +1,20 @@
 class LibbppPhylOmics < Formula
-  homepage "http://biopp.univ-montp2.fr/"
-  url "http://biopp.univ-montp2.fr/repos/sources/bpp-phyl-omics-2.2.0.tar.gz"
-  sha256 "a48f4c6f0ea1758c1f6dc8a262d5cbad95769739d46ce9af08527107a548bfaa"
+  desc "Bio++ Phylogenetics Library - Omics components"
+  homepage "http://bioweb.me/biopp"
+  url "https://github.com/BioPP/bpp-phyl-omics/archive/v2.3.1.tar.gz"
+  sha256 "f4853b99bf0baacf96c9ba567a5875242283cba5fb6f066d74716c6f7d84bd34"
 
   depends_on "cmake" => :build
   depends_on "libbpp-seq-omics"
   depends_on "libbpp-phyl"
 
   def install
-    system "cmake", ".", *std_cmake_args, "-DBUILD_TESTING=no"
-    system "make", "install"
+    resource(r).stage do
+      mkdir "build" do
+        system "cmake", "..", *std_cmake_args
+        system "make", "#{r}-shared", "#{r}-static"
+        system "make", "install"
+      end
+    end
   end
 end

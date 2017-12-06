@@ -1,7 +1,7 @@
-class Maffilter < Formula
+class MafFilter < Formula
   homepage "http://bioweb.me/maffiter"
-  url "http://biopp.univ-montp2.fr/repos/sources/maffilter/maffilter-1.1.0-1.tar.gz"
-  sha256 "eb269d71ff769f79485179cc4a50a82178f0e827d4cc40419723605d651b5fba"
+  url "https://github.com/jydu/maffilter/releases/tag/v1.2.1"
+  sha256 "d6b3604a34ea8bf097054e0f9b449ceae010df238c8760e884b5184dd6f2a28e"
   depends_on "cmake" => :build
   depends_on "libbpp-phyl-omics"
   depends_on "boost"
