@@ -1,4 +1,4 @@
-class BppSuite < Formula
+class Bppsuite < Formula
   desc "The Bio++ Program Suite"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bppsuite/releases/tag/v2.3.1"
