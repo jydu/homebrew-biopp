@@ -9,12 +9,10 @@ class LibbppQt < Formula
   depends_on "libbpp-phyl"
 
   def install
-    resource(r).stage do
-      mkdir "build" do
-        system "cmake", "..", *std_cmake_args
-        system "make", "#{r}-shared", "#{r}-static"
-        system "make", "install"
-      end
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make", "bpp-qt-shared", "bpp-qt-static"
+      system "make", "install"
     end
   end
 end

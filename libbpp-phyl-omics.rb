@@ -9,12 +9,10 @@ class LibbppPhylOmics < Formula
   depends_on "libbpp-phyl"
 
   def install
-    resource(r).stage do
-      mkdir "build" do
-        system "cmake", "..", *std_cmake_args
-        system "make", "#{r}-shared", "#{r}-static"
-        system "make", "install"
-      end
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make", "bpp-phyl-omics-shared", "bpp-phyl-omics-static"
+      system "make", "install"
     end
   end
 end

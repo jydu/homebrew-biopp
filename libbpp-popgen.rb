@@ -8,12 +8,10 @@ class LibbppPopgen < Formula
   depends_on "libbpp-seq"
 
   def install
-    resource(r).stage do
-      mkdir "build" do
-        system "cmake", "..", *std_cmake_args
-        system "make", "#{r}-shared", "#{r}-static"
-        system "make", "install"
-      end
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make", "#{r}-shared", "#{r}-static"
+      system "make", "install"
     end
   end
 end
