@@ -10,7 +10,6 @@ class LibbppPopgen < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
-      system "make", "bpp-popgen-shared", "bpp-popgen-static"
       system "make", "install"
     end
   end

@@ -11,7 +11,6 @@ class LibbppRaa < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
-      system "make", "bpp-raa-shared", "bpp-raa-static"
       system "make", "install"
     end
   end

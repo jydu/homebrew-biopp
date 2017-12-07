@@ -9,7 +9,6 @@ class LibbppCore < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
-      system "make", "bpp-core-shared", "bpp-core-static"
       system "make", "install"
     end
   end

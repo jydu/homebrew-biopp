@@ -10,7 +10,6 @@ class LibbppSeq < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
-      system "make", "bpp-seq-shared", "bpp-seq-static"
       system "make", "install"
     end
   end

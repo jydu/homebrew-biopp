@@ -10,7 +10,6 @@ class LibbppSeqOmics < Formula
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
-      system "make", "bpp-seq-omics-shared", "bpp-seq-omics-static"
       system "make", "install"
     end
   end
