@@ -2,7 +2,7 @@ class LibbppQt < Formula
   desc "Bio++ Sequence Library"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bpp-qt/archive/v2.3.1.tar.gz"
-  sha256 "d0b4fbaf6ff03a003ea37c3c7d5d4b3bc171918d3974280756db0ae9c215b198"
+  sha256 "1dae345b77dcaf27faba9bcea28231dbe1919fb6941f321c5ff2319865df90a4"
  
   depends_on "cmake" => :build
   depends_on "qt"
