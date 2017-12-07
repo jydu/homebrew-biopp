@@ -7,12 +7,10 @@ class LibbppCore < Formula
   depends_on "cmake" => :build
 
   def install
-    resource(r).stage do
-      mkdir "build" do
-        system "cmake", "..", *std_cmake_args
-        system "make", "#{r}-shared", "#{r}-static"
-        system "make", "install"
-      end
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make", "bpp-core-shared", "bpp-core-static"
+      system "make", "install"
     end
   end
 
