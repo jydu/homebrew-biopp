@@ -9,29 +9,29 @@ class LibbppSeqOmics < Formula
 
   def install
     mkdir "build" do
-      system "cmake", "..", "-DCMAKE_BUILD_TYPE=Release", *std_cmake_args
+      system "cmake", "..", *std_cmake_args
       system "make", "install"
     end
   end
 
-#  test do
-#    (testpath/"bpp-test.cpp").write <<-EOS.undent
-##include <Bpp/Seq/Io/Fastq.h>
-##include <Bpp/Seq/SequenceWithQuality.h>
-##include <Bpp/Seq/Alphabet/DNA.h>
-#
-#using namespace bpp;
-#
-#int main () {
-#  Fastq fq;
-#  const Alphabet* alpha = new DNA();
-#  SequenceWithQuality seq("", "", alpha);
-#  return 0;
-#}
-#EOS
-#    libs = %w[-lbpp-core -lbpp-seq -lbpp-seq-omics]
-#    system ENV.cxx, "-o", "test", "bpp-test.cpp",
-#           "-I#{include}", "-L#{lib}", *libs
-#    system "./test"
-#  end
+  test do
+    (testpath/"bpp-test.cpp").write <<-EOS.undent
+#include <Bpp/Seq/Io/Fastq.h>
+#include <Bpp/Seq/SequenceWithQuality.h>
+#include <Bpp/Seq/Alphabet/DNA.h>
+
+using namespace bpp;
+
+int main () {
+  Fastq fq;
+  const Alphabet* alpha = new DNA();
+  SequenceWithQuality seq("", "", alpha);
+  return 0;
+}
+EOS
+    libs = %w[-lbpp-core -lbpp-seq -lbpp-seq-omics]
+    system ENV.cxx, "-o", "test", "bpp-test.cpp",
+           "-I#{include}", "-L#{lib}", *libs
+    system "./test"
+  end
 end
