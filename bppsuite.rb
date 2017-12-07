@@ -8,8 +8,11 @@ class Bppsuite < Formula
   depends_on "libbpp-popgen"
  
   def install
-    system "cmake", ".", *std_cmake_args
-    system "make", "install"
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end
   end
 
   test do
