@@ -1,6 +1,6 @@
 class Physamp < Formula
   homepage "http://bioweb.me/physamp"
-  url "https://github.com/jydu/physamp/archive/v1.0.1.tar.gz"
+  url "https://github.com/jydu/physamp/archive/v1.1.0.tar.gz"
   sha256 "60ab34b0bde5131b380da719c06c29e71cbe326352d837450e2d9ac611fdd1cb"
 
   depends_on "cmake" => :build

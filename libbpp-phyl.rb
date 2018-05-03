@@ -1,7 +1,7 @@
 class LibbppPhyl < Formula
   desc "Bio++ Phylogenetics Library"
   homepage "http://bioweb.me/biopp"
-  url "https://github.com/BioPP/bpp-phyl/archive/v2.3.1.tar.gz"
+  url "https://github.com/BioPP/bpp-phyl/archive/v2.4.0.tar.gz"
   sha256 "4bcf15ae8e096faffaa97eb04c830dddc8a22fcdcb222fe4ea6f2b3775b3a0dc"
 
   depends_on "cmake" => :build

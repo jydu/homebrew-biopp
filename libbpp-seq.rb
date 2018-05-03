@@ -1,7 +1,7 @@
 class LibbppSeq < Formula
   desc "Bio++ Sequence Library"
   homepage "http://bioweb.me/biopp"
-  url "https://github.com/BioPP/bpp-seq/archive/v2.3.1.tar.gz"
+  url "https://github.com/BioPP/bpp-seq/archive/v2.4.0.tar.gz"
   sha256 "cfe8f82175aee11e94e250c3d22b01e96984b23f6040fd18f74b57375530853f"
 
   depends_on "cmake" => :build
