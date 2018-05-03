@@ -1,7 +1,7 @@
 class LibbppCore < Formula
   desc "Bio++ Core Library"
   homepage "http://bioweb.me/biopp"
-  url "https://github.com/BioPP/bpp-core/archive/v2.3.1.tar.gz"
+  url "https://github.com/BioPP/bpp-core/archive/v2.4.0.tar.gz"
   sha256 "d3b9e510e224666d4c780f585e2db6a8f4c36eafe1c90230128d362e5a222880"
 
   depends_on "cmake" => :build
