@@ -2,7 +2,7 @@ class LibbppRaa < Formula
   desc "Bio++ RAA Library"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bpp-raa/archive/v2.4.0.tar.gz"
-  sha256 "3fa94695c76d88fb3d28ebaa2bffcb688f59d302874ea9aa62e6e88f8544b06c"
+  sha256 "db80c10aa1d333eae7a8d6b1216872f68fc82389dd0375000ae3ba670b1ebef9"
   
   depends_on "cmake" => :build
   depends_on "libzip"

@@ -2,7 +2,7 @@ class LibbppSeqOmics < Formula
   desc "Bio++ Sequence Library - Omics components"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bpp-seq-omics/archive/v2.4.0.tar.gz"
-  sha256 "3217b35fa98e94824e19e5e2765f4561cb5d5ec0f93f5f4e7fc213e6b5b59e83"
+  sha256 "3217c7d6253f32c101d628aa039f2b3c49c3990de46c6842f2b88637da408e21"
 
   depends_on "cmake" => :build
   depends_on "libbpp-seq"

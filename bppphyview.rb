@@ -1,4 +1,4 @@
-class Bppsuite < Formula
+class Bppphyview < Formula
   desc "The Bio++ Phylogenetic Viewer"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bppphyview/archive/v0.6.0.tar.gz"
