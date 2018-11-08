@@ -2,7 +2,7 @@ class Bppsuite < Formula
   desc "The Bio++ Program Suite"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bppsuite/archive/v2.4.1.tar.gz"
-  sha256 "1eba19f678a4026bd8ce29c9a475d1e5452ecbee4c971dd2dc8167528d992de2"
+  sha256 "0485adcc17e37439069d27e4fac144e5ae38036ba21f31e6d21f070ce4ea5199"
   
   depends_on "cmake" => :build
   depends_on "libbpp-phyl"
