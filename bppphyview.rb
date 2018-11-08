@@ -2,7 +2,7 @@ class Bppphyview < Formula
   desc "The Bio++ Phylogenetic Viewer"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bppphyview/archive/v0.6.1.tar.gz"
-  sha256 "160d66cacd0718cbb75a946e7274f2fa5ada2fb042f65cd7877efa2e12bc0de1"
+  sha256 "dfa4a26590e5cc6e71c69224d4d0659d47efb0b0388411256d773fcfab229f16"
   
   depends_on "cmake" => :build
   depends_on "libbpp-qt"
