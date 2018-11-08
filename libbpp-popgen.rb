@@ -2,7 +2,7 @@ class LibbppPopgen < Formula
   desc "Bio++ Population Genetics Library"
   homepage "http://bioweb.me/biopp"
   url "https://github.com/BioPP/bpp-popgen/archive/v2.4.1.tar.gz"
-  sha256 "7002ca10192e1b2a3c0a97e0091c416829f1e598540fc41c493e4f73a7ed8375"
+  sha256 "03b57d71a63c8fa7f11c085e531d0d691fc1d40d4ea541070dabde0ab3baf413"
 
   depends_on "cmake" => :build
   depends_on "libbpp-seq"
